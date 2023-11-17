@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nismara Andini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F9F9F9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #FFF;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            list-style-type: none;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .nav-item a:hover {
+            color: #000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><h2>Recommendations</h2></div>
+        <ul class="nav">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/cv">CV</a></li>
+            <li class="nav-item"><a href="/gallery">Gallery</a></li>
+            <li class="nav-item"><a href="/biodata">Biodata</a></li>
+            <li class="nav-item"><a href="/contact">Contact</a></li>
+            <li class="nav-item"><a href="/recommendations">Recommendations</a></li>
+            <li class="nav-item"><a href="/fibonacci">Fibonacci</a></li>
+            <li class="nav-item"><a href="/json">Convert</a></li>
+            <li class="nav-item"><a href="/post">Post</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="container">
+            <h1>My Favorite Cafes</h1>
+            <div class="cafe">
+                <img src="{{ url_for('static', filename='images/sliceofcali.jpg') }}" alt="Slice of Cali" style="width:200px;height:200px;">
+                <h2>Slice of Cali</h2>
+                <p>Tempatnya so comfy, pizzanya enak banget</p>
+            </div>
+            <div class="cafe">
+                <img src="{{ url_for('static', filename='images/coste.jpg') }}" alt="Coste" style="width:200px;height:200px;">
+                <h2>Coste</h2>
+                <p>Tempat yang sempurna untuk menikmati minuman dan cake yang enak</p>
+            </div>
+            <div class="cafe">
+                <img src="{{ url_for('static', filename='images/pausecafe.jpg') }}" alt="Pause Cafe" style="width:200px;height:200px;">
+                <h2>Pause Cafe</h2>
+                <p>Tempat yang ideal untuk mengambil jeda sejenak dari kesibukan sehari-hari</p>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

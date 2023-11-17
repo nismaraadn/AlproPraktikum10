@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F9F9F9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #FFF;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            list-style-type: none;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-item a:hover {
+            color: #000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 15px;
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 250px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile h3, h4 {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin: 20px 0;
+            border-bottom: 1px solid #CCC;
+            padding: 20px;
+            background-color: #FFF;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section li {
+            margin: 10px 0;
+        }
+
+        .section li span {
+            font-weight: 500;
+            color: #00008B; /* Dark blue color */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><h2>Curriculum Vitae</h2></div>
+        <ul class="nav">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/cv">CV</a></li>
+            <li class="nav-item"><a href="/gallery">Gallery</a></li>
+            <li class="nav-item"><a href="/biodata">Biodata</a></li>
+            <li class="nav-item"><a href="/contact">Contact</a></li>
+            <li class="nav-item"><a href="/recommendations">Recommendations</a></li>
+            <li class="nav-item"><a href="/fibonacci">Fibonacci</a></li>
+            <li class="nav-item"><a href="/json">Convert</a></li>
+            <li class="nav-item"><a href="/post">Post</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <img src="{{ url_for('static', filename='images/nismara.jpg') }}" alt="Foto Nismara">
+            <div>
+                <h3>Nismara Andini</h3>
+                <h4>Mahasiswa Teknologi Sains Data</h4>
+                <h4>Univeritas Airlangga</h4>
+            </div>
+        </div>
+        <div class="section">
+            <h2>   </h2>
+            <p>Saya merupakan mahasiswi yang memiliki ketertarikan pada data-data matematika dan semasa SMA saya meraih medali emas dalam Kompetisi Sains Matematika. Tertarik dengan bidang sosial dimana saya ingin menjadi aktivis dan penyambung lidah masyarakat. Memiliki ambisi untuk menjadi seorang data scientist yang sukses dan berkontribusi besar untuk kemajuan Indonesia.</p>
+        </div>
+        <div class="section">
+            <h2>Keterampilan</h2>
+            <ul>
+                <li><span>Hard Skills:</span> Microsoft office, Canva</li>
+                <li><span>Soft Skills:</span> Mudah Beradaptasi, Percaya diri, Kerja Sama, Fast Learner, Kemauan Belajar Tinggi, Mudah Bergaul, Komunikasi, Profesional, Bertanggung jawab</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <li><span>MIPA | SMAN 1 Surabaya – Surabaya 2019-2022</span>
+                    <ul>
+                        <li>Lulus dengan nilai rata-rata ujian sekolah 91.38</li>
+                        <li>Aktif di berbagai mata pelajaran dan mendapat ranking 6 paralel IPA dan IPS</li>
+                        <li>Mendapatkan medali emas dalam kompetisi matematika</li>
+                    </ul>
+                </li>
+                <li><span>Teknologi Sains Data | Universitas Airlangga – Surabaya 2022- sekarang</span></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Pengalaman Organisasi</h2>
+            <ul>
+                <li><span>Staff Muda Kementrian Hubungan Masyarakat | Sekolah BEM FTMM 2022 Oktober - Desember 2022</span></li>
+                    <ul>
+                        <li>Bertanggung jawab menjadi staff muda yang bisa melaksanakan tugas dengan baik.</li>
+                        <li>Bertanggung jawab membantu dalam mempersiapkan program kerja kementrian hubungan masyarakat yaitu Duta
+                            FTMM 2022.</li>
+                    </ul>
+                </li>
+                <li><span>Hubungan antar Lembaga dan Masyarakat | HIMATESDA - Maret - sekarang</span>
+                    <ul>
+                        <li>Menjadi contact person HIMATESDA, bertanggung jawab untuk menjalin dan mempertahankan hubungan baik antara HIMATESDA dan lembaga-lembaga lainnya.</li>
+                        <li>Membantu dalam penyebaran informasi dan komunikasi antara HIMATESDA dan masyarakat.</li>
+                        <li>Menyediakan dukungan dan bantuan kepada anggota organisasi yang membutuhkan.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Pengalaman Kepanitiaan</h2>
+            <ul>
+                <li><span>Humas | Hero 2k19 Donor Darah SMAN 1 Surabaya - Oktober - November 2019</span></li>
+                    <ul>
+                        <li>Bertanggung jawab mempublikasikan acara donor darah kepada publik.</li>
+                        <li>Mengurus segala komunikasi dengan pendonor pada saat acara berlangsung.</li>
+                    </ul>
+                </li>
+                <li><span>Liaison Officer | Smasa Cup 2021 - Maret - September 2021</span>
+                    <ul>
+                        <li>Membantu divisi humas untuk menjadi narahubung dengan pihak eksternal.</li>
+                        <li>Mengarahkan para peserta dalam perlombaan.</li>
+                        <li>Menjadi penghubung antara peserta dan panitia yang lain.</li>
+                    </ul>
+                </li>
+                <li><span>Sekretaris | Duta FTMM 2022 - November 2022</span>
+                    <ul>
+                        <li>Bertanggung jawab dalam keperluan surat-menyurat.</li>
+                        <li>Bertanggung jawab membuat proposal dan laporan pertanggungjawaban (LPJ).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
